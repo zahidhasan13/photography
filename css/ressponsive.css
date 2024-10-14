@@ -3,6 +3,16 @@
   .container {
     width: 940px;
   }
+  .hero-content .heading {
+    font-size: 1.5rem;
+  }
+  .hero-content .sub-heading {
+    font-size: 0.8rem;
+  }
+  .hero-content .hero-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -16,6 +26,14 @@
     font-size: 14px;
     letter-spacing: 0.07rem;
   }
+  .hero-content .heading {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero-content .sub-heading {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -27,5 +45,13 @@
   }
   .mobile-bars {
     display: block;
+  }
+  .hero-content .heading {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .hero-content .sub-heading {
+    width: 95%;
+    margin: 1.5rem auto;
   }
 }
