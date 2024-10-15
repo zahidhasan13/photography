@@ -20,6 +20,9 @@ li {
   width: 1200px;
   margin: 0 auto;
 }
+.section {
+  margin: 100px 0;
+}
 /* Header CSS */
 nav {
   background: #fff;
@@ -117,10 +120,51 @@ nav {
 }
 .hero-content .hero-btn {
   background: rgb(238, 111, 8);
-  border: none;
+  border: 1px solid transparent;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem 2rem;
   border-radius: 5px;
+  cursor: pointer;
+
+  transition: 0.5s ease-in-out;
+}
+.hero-content .hero-btn:hover {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+/* About Me CSS */
+.sec-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sec-title h2 {
+  font-size: 3rem;
+  position: relative;
+  letter-spacing: 0.5rem;
+}
+.sec-title h2::after {
+  content: "About Me";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  opacity: 0.1;
+}
+.about-content {
+  text-align: center;
+}
+.about-img img {
+  width: 300px;
+  border: 4px solid #1d1d1d;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+.about-text p {
+  font-size: 20px;
+  line-height: 1.5rem;
 }

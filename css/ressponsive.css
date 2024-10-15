@@ -13,6 +13,12 @@
     font-size: 1rem;
     padding: 0.7rem 1.5rem;
   }
+  .sec-title h2 {
+    font-size: 2rem;
+  }
+  .sec-title h2::after {
+    font-size: 4rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -34,6 +40,12 @@
     width: 90%;
     margin: 1.5rem auto;
   }
+  .sec-title h2 {
+    font-size: 1.5rem;
+  }
+  .sec-title h2::after {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -53,5 +65,12 @@
   .hero-content .sub-heading {
     width: 95%;
     margin: 1.5rem auto;
+  }
+  .sec-title h2 {
+    font-size: 2rem;
+  }
+  .sec-title h2::after {
+    font-size: 3rem;
+    width: 100%;
   }
 }
