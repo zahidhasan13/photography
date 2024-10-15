@@ -13,10 +13,12 @@
     font-size: 1rem;
     padding: 0.7rem 1.5rem;
   }
-  .sec-title h2 {
+  .about-title h2,
+  .portfolio-title h2 {
     font-size: 2rem;
   }
-  .sec-title h2::after {
+  .about-title h2::after,
+  .portfolio-title h2::after {
     font-size: 4rem;
   }
 }
@@ -40,11 +42,16 @@
     width: 90%;
     margin: 1.5rem auto;
   }
-  .sec-title h2 {
+  .about-title h2,
+  .portfolio-title h2 {
     font-size: 1.5rem;
   }
-  .sec-title h2::after {
+  .about-title h2::after,
+  .portfolio-title h2::after {
     font-size: 3rem;
+  }
+  .port-intro {
+    width: 80%;
   }
 }
 @media (max-width: 576px) {
@@ -66,11 +73,24 @@
     width: 95%;
     margin: 1.5rem auto;
   }
-  .sec-title h2 {
+  .about-title h2 {
     font-size: 2rem;
   }
-  .sec-title h2::after {
+  .portfolio-title h2 {
+    font-size: 1.7rem;
+  }
+  .about-title h2::after {
     font-size: 3rem;
     width: 100%;
+  }
+  .port-intro {
+    width: 95%;
+  }
+  .portfolio-title h2::after {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

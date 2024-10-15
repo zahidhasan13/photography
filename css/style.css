@@ -21,7 +21,34 @@ li {
   margin: 0 auto;
 }
 .section {
-  margin: 100px 0;
+  margin: 80px 0;
+}
+.about-title h2,
+.portfolio-title h2 {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.5rem;
+  color: #1d1d1d;
+}
+.about-title h2::after {
+  content: "About Me";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  opacity: 0.1;
+}
+.portfolio-title h2::after {
+  content: "Portfolio";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  opacity: 0.1;
 }
 /* Header CSS */
 nav {
@@ -29,7 +56,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   padding: 20px 0;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   right: 0;
@@ -136,24 +163,6 @@ nav {
 }
 
 /* About Me CSS */
-.sec-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.sec-title h2 {
-  font-size: 3rem;
-  position: relative;
-  letter-spacing: 0.5rem;
-}
-.sec-title h2::after {
-  content: "About Me";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 6rem;
-  opacity: 0.1;
-}
 .about-content {
   text-align: center;
 }
@@ -167,4 +176,28 @@ nav {
 .about-text p {
   font-size: 20px;
   line-height: 1.5rem;
+  color: #1d1d1d;
+}
+
+/* Portfolio Css */
+.port-intro {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.port-intro p {
+  font-size: 18px;
+  color: #1d1d1d;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 50px;
+}
+.gallery img {
+  width: 100%;
+  border: 2px solid #1d1d1d;
+  padding: 10px;
+  border-radius: 5px;
 }
