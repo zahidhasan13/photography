@@ -25,7 +25,8 @@ li {
 }
 .about-title h2,
 .portfolio-title h2,
-.service-title h2 {
+.service-title h2,
+.testimonial-title h2 {
   font-size: 3rem;
   position: relative;
   text-align: center;
@@ -53,6 +54,15 @@ li {
 }
 .service-title h2::after {
   content: "Services";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  opacity: 0.1;
+}
+.testimonial-title h2::after {
+  content: "Testimonial";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -239,4 +249,26 @@ nav {
   font-size: 1.5rem;
   color: #1d1d1d;
   margin: 1rem 0;
+}
+
+/* Testimonial Section */
+.testimonial-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 80px;
+}
+.feedback {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  border-radius: 0 40px 0 40px;
+}
+.feedback .client-comment {
+  font-size: 1.3rem;
+}
+.feedback .client-name {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 3rem;
 }

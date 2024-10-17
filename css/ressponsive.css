@@ -15,12 +15,14 @@
   }
   .about-title h2,
   .portfolio-title h2,
-  .service-title h2 {
+  .service-title h2,
+  .testimonial-title h2 {
     font-size: 2rem;
   }
   .about-title h2::after,
   .portfolio-title h2::after,
-  .service-title h2::after {
+  .service-title h2::after,
+  .testimonial-title h2::after {
     font-size: 4rem;
   }
 }
@@ -46,18 +48,21 @@
   }
   .about-title h2,
   .portfolio-title h2,
-  .service-title h2 {
+  .service-title h2,
+  .testimonial-title h2 {
     font-size: 1.5rem;
   }
   .about-title h2::after,
   .portfolio-title h2::after,
-  .service-title h2::after {
+  .service-title h2::after,
+  .testimonial-title h2::after {
     font-size: 3rem;
   }
   .port-intro {
     width: 80%;
   }
-  .service-list {
+  .service-list,
+  .testimonial-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -99,8 +104,17 @@
     font-size: 2.5rem;
     width: 100%;
   }
+
+  .testimonial-title h2 {
+    font-size: 1.5rem;
+  }
+  .testimonial-title h2::after {
+    font-size: 2rem;
+    width: 100%;
+  }
   .gallery,
-  .service-list {
+  .service-list,
+  .testimonial-list {
     grid-template-columns: repeat(1, 1fr);
   }
 }
