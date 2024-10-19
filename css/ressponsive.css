@@ -81,11 +81,34 @@
     width: 100%;
     padding: 0 10px;
   }
+  .logo {
+    z-index: 9999;
+  }
   .nav-items {
-    display: none;
+    flex-direction: column;
+    background: #e4e3e3;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-items-active {
+    left: 0;
   }
   .mobile-bars {
     display: block;
+    z-index: 9999;
+  }
+
+  .hero {
+    opacity: 1;
+    z-index: -999;
   }
   .hero-content .heading {
     width: 95%;
